@@ -1,0 +1,163 @@
+body {
+	margin: 15px;
+	/* font-family: "Ubuntu", sans-serif; */
+}
+
+* {
+	font-family: "Ubuntu", sans-serif;
+}
+
+/* p {
+	font-family: "Ubuntu", sans-serif;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
+	color: #000099;
+}
+
+header {
+	background: #4489c5;
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+
+header img {
+	margin: 0 0 0 20px;
+	width: 32px;
+	height: 32px;
+}
+
+header h1 {
+	margin: 0 0 0 15px;
+	color: #fff;
+}
+
+nav {
+	margin: 0 0 0 40px;
+	display: flex;
+	justify-content: left;
+
+	text-decoration: none;
+	grid-area: nav;
+}
+
+ul {
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+
+li a {
+	margin: 0 0 0 10px;
+	font-size: 20px;
+	color: #000;
+}
+/* _____________________________ */
+
+aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	/* background: coral; */
+	margin: 15px 15px 15px 0;
+	padding: 10px;
+	/* padding: 20px; */
+	border-radius: 10px;
+	grid-area: aside;
+}
+
+aside h3 {
+	font-size: 22px;
+	font-weight: 900;
+	color: #008000;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 220px;
+	/* margin: 0 0 0 20px; */
+}
+
+input {
+	/* display:flex; */
+	width: 100%;
+	margin: 0 0 10px;
+	border-radius: 5px;
+}
+
+.send {
+	width: 210px;
+	height: 20px;
+
+	color: #fff;
+	background: #000;
+}
+
+/* _____________________________ */
+
+main {
+	background: #7fe5ff;
+	padding: 10px;
+	grid-area: main;
+	border-radius: 10px;
+	margin: 15px 0;
+}
+/* _____________________________ */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #092a47;
+	padding: 10px;
+	border-radius: 10px;
+
+	grid-area: footer;
+}
+/* _____________________________ */
+
+.container {
+	/* align-items: center; */
+	margin: 0 auto;
+	width: 1400px;
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"aside main main"
+		"footer footer footer";
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 140px 1fr 50px;
+	height: 100vh;
+}
+
+/* ----------------------------- */
+
+table {
+	width: 500px;
+	border: 2px black solid;
+	border-collapse: collapse;
+	margin: 20px;
+}
+
+th,
+td {
+	border: 1px burlywood solid;
+}
+
+/* ------------------------------ */
+
+p {
+	margin: 0;
+}
