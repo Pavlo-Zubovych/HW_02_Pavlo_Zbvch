@@ -22,7 +22,7 @@
 	<body>
 		<div class="container">
 			<header>
-				<img src="./img/work-from-home.png" alt="icon" />
+				<img src="./img/work-from-home.png" alt="icon man" />
 				<h1>John Doe</h1>
 
 				<nav>
@@ -40,7 +40,12 @@
 					<input name="Name" type="text" placeholder="Name" />
 
 					<input name="Email" type="Email" placeholder="Email" />
-					<input name="Message" type="text" placeholder="Message" />
+					<input
+						class="message"
+						name="Message"
+						type="text"
+						placeholder="Message"
+					/>
 
 					<input class="send" type="submit" value="Send" />
 				</form>
@@ -48,10 +53,14 @@
 
 			<main>
 				<h2>Hi! My name - John Doe!</h2>
-				<h3>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Deserunt natus repudiandae, ratione ab eum quia non consequuntur.
-				</h3>
+
+				<div class="subtitle">
+					<h3 class="subtitle__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Deserunt natus repudiandae, ratione ab eum quia non
+						consequuntur.
+					</h3>
+				</div>
 
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
@@ -67,10 +76,35 @@
 					dolor quia ab veniam. Doloremque?
 				</p>
 
-				<h3>My hobby!</h3>
+				<h3 class="subtitle__hobby">My hobby!</h3>
+
+				<table>
+					<tr>
+						<th>Iconc</th>
+						<th>Name hobby</th>
+					</tr>
+					<tr>
+						<td><img src="./img/bicycle.png" alt="bicycle" /></td>
+						<td>to ride a bike</td>
+					</tr>
+					<tr>
+						<td><img src="./img/books.png" alt="book" /></td>
+						<td>read books</td>
+					</tr>
+					<tr>
+						<td><img src="./img/travel.png" alt="travel" /></td>
+						<td>travel the world</td>
+					</tr>
+				</table>
 			</main>
 
-			<footer>2022 Copyright</footer>
+			<footer>
+				<i
+					class="fa-sharp fa-regular fa-copyright"
+					style="color: #ffffff"
+				></i>
+				2022 Copyright
+			</footer>
 		</div>
 	</body>
 </html>
