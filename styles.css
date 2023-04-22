@@ -75,10 +75,11 @@ aside {
 	grid-area: aside;
 }
 
-aside h3 {
-	font-size: 22px;
+h3 {
+	font-size: 20px;
 	font-weight: 900;
 	color: #008000;
+	margin: 12px 0 15px 0;
 }
 
 form {
@@ -86,19 +87,25 @@ form {
 	flex-direction: column;
 	align-items: center;
 	width: 220px;
-	/* margin: 0 0 0 20px; */
 }
 
 input {
-	/* display:flex; */
+	/* display: flex;
+  justify-content: center; */
 	width: 100%;
 	margin: 0 0 10px;
 	border-radius: 5px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.message {
+	/* height: 40px; */
 }
 
 .send {
 	width: 210px;
-	height: 20px;
+	/* height: 20px;*/
 
 	color: #fff;
 	background: #000;
@@ -113,6 +120,29 @@ main {
 	border-radius: 10px;
 	margin: 15px 0;
 }
+
+h2 {
+	font-size: 32px;
+	color: #125907;
+	text-align: center;
+}
+
+.subtitle {
+	width: 500px;
+	text-align: right;
+}
+
+.subtitle__text {
+	color: #000;
+}
+
+p {
+	padding: 10px 0 0 0;
+}
+
+.subtitle__hobby {
+	text-align: center;
+}
 /* _____________________________ */
 
 footer {
@@ -126,10 +156,14 @@ footer {
 
 	grid-area: footer;
 }
+
+.fa-copyright {
+	margin: 0 10px 0 0;
+}
+
 /* _____________________________ */
 
 .container {
-	/* align-items: center; */
 	margin: 0 auto;
 	width: 1400px;
 	display: grid;
@@ -145,19 +179,20 @@ footer {
 /* ----------------------------- */
 
 table {
-	width: 500px;
+	width: 300px;
 	border: 2px black solid;
 	border-collapse: collapse;
-	margin: 20px;
+	margin: auto;
 }
 
 th,
 td {
-	border: 1px burlywood solid;
+	border: 2px #000000 dotted;
+	text-align: center;
 }
 
 /* ------------------------------ */
 
-p {
+/* p {
 	margin: 0;
-}
+} */
